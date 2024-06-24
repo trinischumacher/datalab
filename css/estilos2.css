@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+h1 {
+    height: 50px;
+    color: rgb(101, 59, 68);
+    font-size: 60px; 
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+h3 {
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    background-color: #a97b8a; 
+    padding: 10px 20px; 
+    font-size: 17px;
+    font-weight: 400;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    width: 180px; 
+    height: 45px; 
+    margin: auto;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+header a i {
+    font-size: 30px; 
+    color: beige;
+}
+
+header a:hover {
+    transform: scale(1.2);
+    font-weight: 500;
+    background-color: #C13584; 
+}
+
+main {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div {
+    width: 30%;
+    border-radius: 20px;
+    transition: transform 1s;
+}
+
+video {
+    margin: 40px auto;
+    display: flex;
+}
+
+img, video {
+    width: 110%;
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #f2e3e7; }
+    50% { background-color: #f19ac4; }
+    100% { background-color: #e14f84; }
+}
+
+body {
+    animation: backgroundChange 10s infinite;
+}
